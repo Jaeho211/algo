@@ -1,7 +1,6 @@
 import sys
 from collections import deque
 
-
 # https://www.acmicpc.net/problem/2178
 
 # 미로에서 1은 이동할 수 있는 칸을 나타내고, 0은 이동할 수 없는 칸을 나타낸다.
@@ -27,7 +26,7 @@ def move(node, movement):
 
 
 def bfs(start, end):
-    global maze
+    global maze, N, M
 
     visited = [[False] * M for _ in range(N)]
 
@@ -43,7 +42,7 @@ def bfs(start, end):
         for movement in movement_array:
             next_node = move(current_node, movement)
             x, y = next_node
-            if visited[y][x] == False and maze[y][x] == '1':
+            if visited[y][x] is False and maze[y][x] == '1':
                 if next_node == end:
                     return depth + 1
 
