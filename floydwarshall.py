@@ -1,8 +1,6 @@
 import sys
-from collections import deque
-import heapq
 
-
+# 플로이드-워셜 알고리즘(Floyd-Warshall Algorithm)은 그래프에서 가능한 모든 노드 쌍에 대해 최단 거리를 구하는 알고리즘이다.
 # https://www.acmicpc.net/problem/11404
 
 # n(1 ≤ n ≤ 100)개의 도시가 있다. 그리고 한 도시에서 출발하여 다른 도시에 도착하는 m(1 ≤ m ≤ 100,000)개의 버스가 있다.

@@ -1,6 +1,5 @@
 import sys
 from collections import deque
-import heapq
 
 
 # https://www.acmicpc.net/problem/17412
