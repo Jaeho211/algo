@@ -15,10 +15,8 @@ N = int(sys.stdin.readline())
 budgets = list(map(int, sys.stdin.readline().split()))
 M = int(sys.stdin.readline())
 
-budgets.sort()
-
 start = 0
-end = budgets[-1]
+end = max(budgets)
 while start <= end:
     mid = (start + end) // 2
 
