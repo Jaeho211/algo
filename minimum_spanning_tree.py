@@ -66,7 +66,7 @@ edge = sorted(edge, key=lambda item: item.val)
 cost = 0
 parent = [i for i in range(n)]
 cnt = 0
-for idx in range(n*(n-1)):
+for idx in range(len(edge)):
     if merge(edge[idx].next, edge[idx].prev):
         cost += edge[idx].val
         cnt += 1
